@@ -12,6 +12,10 @@ import path from "path"
 //configure env
 dotenv.config();
 
+// es mpduel fix
+const __filename =fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 //databse config
 connectDB();
 
